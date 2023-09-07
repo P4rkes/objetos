@@ -1,0 +1,156 @@
+//
+
+// const professor = {
+//     nome: 'vitor',
+//     idade: 27,
+//     email: 'vitor@gmail.com'
+// }
+
+// console.log(professor.idade)
+// console.log(professor["email"])
+
+// professor.nome = 'mika'
+// professor['email'] = 'profmika@gmail.com'
+
+//
+
+// const filme = {
+//     direcao: 'parkes',
+//     nome: 'clube da luta',
+//     ano: 1999,
+//     elenco: ["narrador",  "e tyler dutter"],
+//     visto: Boolean(true)
+//}
+
+// console.log(filme.direcao)
+// console.log(filme.nome)
+// console.log(filme.ano)
+// console.log(filme["elenco"])
+// console.log(filme['visto'])
+
+//
+
+// const pessoa = {
+//     nome: 'Parkes',
+//     idade: 17,
+//     genero: 'blackmetal',
+// }
+
+// console.log("a pessoa", pessoa.nome, "tem", pessoa.idade, "anos e gosta de", pessoa.genero)
+
+//
+
+// const donoDoPet = {
+//     nome: "Parkes",
+//     pet: {
+//         nomeDoPet: "reboco",
+//         raca: "parede",
+//         idade: 80
+//     }
+// }
+
+// console.log(donoDoPet.pet.nomeDoPet)
+
+//
+
+// const curso = {
+//     nome: "noturno Frontend",
+//     linguagens: ["JS", "CSS", "HTML"]
+// }
+
+// console.log(curso.linguagens[0])
+
+//
+
+//objeto dentro de array
+// const professores = [
+//     {nome: "Parkes", modulo: 1},
+//     {nome: "Scott", modulo: 2},
+//     {nome: "Luke", modulo: 3},
+// ]
+
+// console.log(professores[2].nome);
+// console.log(professores[1].nome);
+// console.log(professores[0].nome);
+
+//
+
+//adcionando propriedades
+
+// curso.numeroEstudante = 50;
+// curso['numeroEstudantes'] = 50;
+
+//
+
+// exercicio 3
+
+//  const filme = {
+//      direcao: 'parkes',
+//      nome: 'clube da luta',
+//      ano: 1999,
+//      elenco: ["Edward Norton",  "Brad Pitt"],
+//      visto: Boolean(true)
+// }
+
+// filme.personagens = ["narrador", "tyler Durder"];
+
+// filme.elenco[0] = "xuxa"
+
+// console.log("nome:", filme.nome);
+// console.log("ano:", filme.ano);
+// console.log("direção:", filme.direcao);
+// console.log("elenco:", filme.elenco);
+// console.log(filme.elenco[0], "atua como", filme.personagens[0]);
+// console.log(filme.elenco[1], "atua como", filme.personagens[1]);
+// console.log("visto:", filme.visto);
+
+//
+
+// espalhamento ou spread
+// abaixo, copiamos o usuario e sobrescrevemos as propriedades nome e idade com novos valores
+
+// const usuario = {
+//     nome: 'Luke',
+//     idade: 17,
+//     email: 'lukescottparkes@protonmail.com',
+//     cidade: 'São Leopoldo'
+// }
+
+// const novoUsuario = {
+//     ...usuario,
+//     nome: 'Parkes',
+//     idade: 700
+// }
+
+// console.log(usuario);
+
+// console.log(novoUsuario)
+
+//
+
+//copiando arrays
+
+// const listaDeNomes = ["mika", "paula", "vitor"]
+
+// const copiaListaDeNomes = [...listaDeNomes]
+// copiaListaDeNomes[0] - "vitor"
+
+// console.log(copiaListaDeNomes) //["vitor", "paula", "vitor"]
+
+// 
+
+// exercicio 4
+
+function pessoaA (objetoA) {
+    objetoNovo = {...objetoA, comidas: ["parede", "reboco"], objeto: {nome: "cavalo", idade: 30 }}
+console.log("O nome da pessoa é:", objetoNovo.nomeB, "e suas comidas favoritas são:", objetoNovo.comidas[0] + ",", objetoNovo.comidas[1] + ". Seu melhor anigo se chama", objetoNovo.objeto.nome, "e tem", objetoNovo.objeto.idade, "anos.")
+}
+
+  const pessoaB = {
+      nomeB: 'Parkes',
+      idadeB: 17,
+      generoB: 'blackmetal',
+      comidaB: ["pizza", "parede"],
+  }
+
+  pessoaA(pessoaB);
